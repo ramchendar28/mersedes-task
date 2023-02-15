@@ -14,7 +14,7 @@ export const initialState: PostsState = postsAdapter.getInitialState({
 });
 
 export function sortByName(a: Post, b: Post): number {
-  const compare = a.title.localeCompare(b.title);
+  const compare = a.name.localeCompare(b.name);
   if (compare > 0) {
     return -1;
   }
